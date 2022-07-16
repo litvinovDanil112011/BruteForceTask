@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g4-cd-RKK">
-                                <rect key="frame" x="67" y="735" width="283" height="82"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g4-cd-RKK">
+                                <rect key="frame" x="64" y="735" width="286" height="82"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="3oO-ez-etD"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="EKC-bF-LpR"/>
-                                    <constraint firstAttribute="width" constant="283" id="ixR-z7-ped"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="283" id="ixR-z7-ped"/>
                                 </constraints>
                                 <state key="normal" title="Backround Screen"/>
                                 <connections>
@@ -34,22 +34,21 @@
                                 <rect key="frame" x="65.5" y="578" width="283" height="82"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="283" id="54O-uY-s7A"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="283" id="54O-uY-s7A"/>
                                     <constraint firstAttribute="height" constant="82" id="Hd7-LB-XXD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Password Start"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5N-tC-v3P">
-                                <rect key="frame" x="66" y="392" width="285" height="34"/>
+                                <rect key="frame" x="66" y="392" width="282" height="34"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZk-P4-K8U">
-                                <rect key="frame" x="64" y="227" width="284" height="100"/>
+                                <rect key="frame" x="64" y="227" width="294" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="284" id="Mvp-qf-hdf"/>
                                     <constraint firstAttribute="height" constant="100" id="Vag-Pv-N9V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -57,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Z4q-Yr-lXq">
-                                <rect key="frame" x="155.5" y="110" width="101" height="90"/>
+                                <rect key="frame" x="156.5" y="110" width="101" height="90"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="101" id="dWM-BT-S2C"/>
@@ -69,22 +68,32 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jht-5X-32R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Jq-Qq-trC"/>
+                            <constraint firstItem="Z4q-Yr-lXq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6KP-I7-Fk1"/>
                             <constraint firstItem="jht-5X-32R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="534" id="7Cl-Ib-ywl"/>
                             <constraint firstItem="BZk-P4-K8U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="A97-Bu-hut"/>
                             <constraint firstItem="3g4-cd-RKK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BWL-rq-cR4"/>
+                            <constraint firstItem="Z4q-Yr-lXq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ghr-Ez-auf"/>
                             <constraint firstItem="jht-5X-32R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hhe-9h-ivi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3g4-cd-RKK" secondAttribute="trailing" constant="64" id="I5p-vz-UnR"/>
                             <constraint firstItem="T5N-tC-v3P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="Ltm-km-VY8"/>
                             <constraint firstItem="BZk-P4-K8U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="183" id="OKd-gz-dgL"/>
                             <constraint firstItem="Z4q-Yr-lXq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="YpJ-nf-oxa"/>
+                            <constraint firstItem="3g4-cd-RKK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e7x-cR-Pck"/>
                             <constraint firstItem="3g4-cd-RKK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="691" id="ePk-Vk-c9W"/>
                             <constraint firstItem="T5N-tC-v3P" firstAttribute="centerX" secondItem="3g4-cd-RKK" secondAttribute="centerX" id="gJp-lp-Qb4"/>
-                            <constraint firstItem="Z4q-Yr-lXq" firstAttribute="centerX" secondItem="BZk-P4-K8U" secondAttribute="centerX" id="kQ0-Id-0qR"/>
                             <constraint firstItem="T5N-tC-v3P" firstAttribute="top" secondItem="BZk-P4-K8U" secondAttribute="bottom" constant="65" id="mcS-C6-fY8"/>
+                            <constraint firstItem="BZk-P4-K8U" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="4" id="v1a-bW-S86"/>
+                            <constraint firstItem="BZk-P4-K8U" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="4" id="vCI-qe-NdE"/>
+                            <constraint firstItem="T5N-tC-v3P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wa1-Qk-cwe"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activitiIndicator" destination="Z4q-Yr-lXq" id="WR6-yR-Xwo"/>
                         <outlet property="button" destination="3g4-cd-RKK" id="yGm-KB-boF"/>
+                        <outlet property="label" destination="BZk-P4-K8U" id="Sv0-KM-rnr"/>
+                        <outlet property="passwordButton" destination="jht-5X-32R" id="80x-D4-lw1"/>
+                        <outlet property="passwordTextFild" destination="T5N-tC-v3P" id="lXN-6u-yQs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

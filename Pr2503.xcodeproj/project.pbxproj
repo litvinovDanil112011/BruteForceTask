@@ -60,10 +60,9 @@
 		264DFEDC260D07EF0035EA15 /* Pr2503 */ = {
 			isa = PBXGroup;
 			children = (
-				264DFEDD260D07EF0035EA15 /* AppDelegate.swift */,
-				264DFEDF260D07EF0035EA15 /* SceneDelegate.swift */,
-				264DFEE1260D07EF0035EA15 /* ViewController.swift */,
-				FA16D2F62880560F00BC5AD7 /* New Group */,
+				FA941B712881D07700BFA8B1 /* App */,
+				FA941B722881D08500BFA8B1 /* ViewController */,
+				FA16D2F62880560F00BC5AD7 /* Ext */,
 				264DFEE3260D07EF0035EA15 /* Main.storyboard */,
 				264DFEE6260D07F00035EA15 /* Assets.xcassets */,
 				264DFEE8260D07F00035EA15 /* LaunchScreen.storyboard */,
@@ -72,13 +71,30 @@
 			path = Pr2503;
 			sourceTree = "<group>";
 		};
-		FA16D2F62880560F00BC5AD7 /* New Group */ = {
+		FA16D2F62880560F00BC5AD7 /* Ext */ = {
 			isa = PBXGroup;
 			children = (
 				FA16D2F72880564000BC5AD7 /* String.swift */,
 				FA16D2F92880568400BC5AD7 /* BruteForce.swift */,
 			);
-			path = "New Group";
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		FA941B712881D07700BFA8B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				264DFEDD260D07EF0035EA15 /* AppDelegate.swift */,
+				264DFEDF260D07EF0035EA15 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA941B722881D08500BFA8B1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				264DFEE1260D07EF0035EA15 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
