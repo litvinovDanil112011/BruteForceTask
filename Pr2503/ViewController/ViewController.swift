@@ -10,24 +10,39 @@ class ViewController: UIViewController {
     
     var isBlack: Bool = false {
         didSet {
-            if isBlack {
-                self.view.backgroundColor = .black
-            } else {
-                self.view.backgroundColor = .white
-            }
+            self.view.backgroundColor = isBlack ? .white : .black
+            self.label.textColor = isBlack ? .black : .systemBlue
         }
     }
     
-    @IBAction func onBut(_ sender: Any) {
+    let queue = DispatchQueue(label: "queue", qos: .utility)
+    var password = String()
+    
+    //MARK: Actions
+    @IBAction func passwordStart(_ sender: Any) {
+        
+        password = passwordTextFild.text ?? ""
+        
+        queue.async {
+            self.bruteForce(passwordToUnlock: self.password)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            if self.label.text == self.password {
+                self.activitiIndicator.stopAnimating()
+                self.label.text = "You password \(self.password)"
+            }
+        })
+    }
+
+@IBAction func onBut(_ sender: Any) {
         isBlack.toggle()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        self.bruteForce(passwordToUnlock: "1!g")
-        
-        // Do any additional setup after loading the view.
+        setupView()
+    }
+    private func setupView(){
+        passwordTextFild.isSecureTextEntry = true
     }
 }
