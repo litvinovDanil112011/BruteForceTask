@@ -16,6 +16,7 @@
 		FA16D2F82880564000BC5AD7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16D2F72880564000BC5AD7 /* String.swift */; };
 		FA16D2FA2880568400BC5AD7 /* BruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16D2F92880568400BC5AD7 /* BruteForce.swift */; };
 		FA941B742882952800BFA8B1 /* Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA941B732882952800BFA8B1 /* Func.swift */; };
+		FACABCC1288DDFA7002934DA /* GeneratorRandomPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACABCC0288DDFA7002934DA /* GeneratorRandomPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FA16D2F72880564000BC5AD7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FA16D2F92880568400BC5AD7 /* BruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForce.swift; sourceTree = "<group>"; };
 		FA941B732882952800BFA8B1 /* Func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Func.swift; sourceTree = "<group>"; };
+		FACABCC0288DDFA7002934DA /* GeneratorRandomPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorRandomPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				FA16D2F72880564000BC5AD7 /* String.swift */,
 				FA16D2F92880568400BC5AD7 /* BruteForce.swift */,
 				FA941B732882952800BFA8B1 /* Func.swift */,
+				FACABCC0288DDFA7002934DA /* GeneratorRandomPassword.swift */,
 			);
 			path = Ext;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				264DFEE2260D07EF0035EA15 /* ViewController.swift in Sources */,
 				FA16D2FA2880568400BC5AD7 /* BruteForce.swift in Sources */,
+				FACABCC1288DDFA7002934DA /* GeneratorRandomPassword.swift in Sources */,
 				264DFEDE260D07EF0035EA15 /* AppDelegate.swift in Sources */,
 				FA941B742882952800BFA8B1 /* Func.swift in Sources */,
 				264DFEE0260D07EF0035EA15 /* SceneDelegate.swift in Sources */,
