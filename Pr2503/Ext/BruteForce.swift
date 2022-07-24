@@ -8,19 +8,22 @@
 import UIKit
 
 extension ViewController {
-    func bruteForce(passwordToUnlock: String) {
+            
+     func bruteForce(passwordToUnlock: String) {
         let ALLOWED_CHARACTERS:   [String] = String().printable.map { String($0) }
 
-        var password: String = ""
+        var passwordBruteForce: String = ""
 
-        // Will strangely ends at 0000 instead of ~~~
-        while password != passwordToUnlock { // Increase MAXIMUM_PASSWORD_SIZE value for more
-            password = generateBruteForce(password, fromArray: ALLOWED_CHARACTERS)
-//             Your stuff here
-            print(password)
-            // Your stuff here
+        while passwordBruteForce != passwordToUnlock { 
+            passwordBruteForce = generateBruteForce(passwordBruteForce, fromArray: ALLOWED_CHARACTERS)
+            
+            print(passwordBruteForce)
+            DispatchQueue.main.async {
+                self.label.text = passwordBruteForce
+                self.activitiIndicator.startAnimating()
+            }
         }
-        print(password)
+        print(passwordBruteForce)
     }
 }
 
