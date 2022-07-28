@@ -9,13 +9,14 @@ import UIKit
 
 extension ViewController {
     
-    func greteRandomPassword() {
+    func greteRandomPassword() -> String {
         
         let numberOfPassword = 3
         let pswdChars = Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
         
         let rndPswd = String((0..<numberOfPassword).map{ _ in pswdChars[Int(arc4random_uniform(UInt32(pswdChars.count)))]})
         print(rndPswd)
+        return rndPswd
     }
 }
-
+// abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
