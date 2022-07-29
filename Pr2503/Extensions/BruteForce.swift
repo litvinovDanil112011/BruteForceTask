@@ -16,7 +16,6 @@ extension ViewController {
 
         while passwordBruteForce != passwordToUnlock { 
             passwordBruteForce = generateBruteForce(passwordBruteForce, fromArray: ALLOWED_CHARACTERS)
-            
             print(passwordBruteForce)
             DispatchQueue.main.async {
                 self.label.text = passwordBruteForce
