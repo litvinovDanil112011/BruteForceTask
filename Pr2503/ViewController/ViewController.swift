@@ -28,13 +28,9 @@ class ViewController: UIViewController {
             queue.async {
                 self.password = self.greteRandomPassword()
             }
-            DispatchQueue.main.async {
             self.passwordTextFild.text = self.password
-            }
         } else {
-            DispatchQueue.main.async {
             self.password = self.passwordTextFild.text ?? ""
-            }
         }
         
         DispatchQueue.main.async {
