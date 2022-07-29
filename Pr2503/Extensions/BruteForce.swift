@@ -26,7 +26,7 @@ extension ViewController {
                     self.label.text = "You password \(self.password)"
                     self.view.backgroundColor = .green
                 } else {
-                    self.label.text = "Password search in progress \(passwordBruteForce)"
+                    self.label.text = "\(passwordBruteForce)"
                     self.view.backgroundColor = .red
                 }
             }
