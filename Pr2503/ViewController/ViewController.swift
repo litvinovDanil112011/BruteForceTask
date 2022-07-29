@@ -10,8 +10,10 @@ class ViewController: UIViewController {
     
     var isBlack: Bool = true {
         didSet {
-            self.view.backgroundColor = isBlack ? .white : .black
-            self.label.textColor = isBlack ? .black : .systemBlue
+            DispatchQueue.main.async {
+                self.view.backgroundColor = self.isBlack ? .white : .black
+                self.label.textColor = self.isBlack ? .black : .systemBlue
+            }
         }
     }
     
@@ -20,16 +22,20 @@ class ViewController: UIViewController {
     
     //MARK: Actions
     @IBAction func passwordStart(_ sender: Any) {
-    
-            // метод которым решаем какой пароль будет либо пользывателя либо рондомный
-            if self.passwordTextFild.text == "" {
-                queue.async {
-                    self.password = self.greteRandomPassword()
-                }
-                self.passwordTextFild.text = self.password
-            } else {
-                self.password = self.passwordTextFild.text ?? ""
+        
+        // метод которым решаем какой пароль будет либо пользывателя либо рондомный
+        if self.passwordTextFild.text == "" {
+            queue.async {
+                self.password = self.greteRandomPassword()
             }
+            DispatchQueue.main.async {
+            self.passwordTextFild.text = self.password
+            }
+        } else {
+            DispatchQueue.main.async {
+            self.password = self.passwordTextFild.text ?? ""
+            }
+        }
         
         DispatchQueue.main.async {
             // начало работы индикатора
@@ -41,12 +47,12 @@ class ViewController: UIViewController {
             self.bruteForce(passwordToUnlock: self.password)
         }
     }
-
-@IBAction func onBut(_ sender: Any) {
-    DispatchQueue.main.async {
-        self.isBlack.toggle()
+    
+    @IBAction func onBut(_ sender: Any) {
+        DispatchQueue.main.async {
+            self.isBlack.toggle()
+        }
     }
-}
     
     override func viewDidLoad() {
         super.viewDidLoad()
