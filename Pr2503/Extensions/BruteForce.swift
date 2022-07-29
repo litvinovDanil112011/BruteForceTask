@@ -20,7 +20,15 @@ extension ViewController {
             print(passwordBruteForce)
             DispatchQueue.main.async {
                 self.label.text = passwordBruteForce
-                self.activitiIndicator.startAnimating()
+                if self.label.text == self.password {
+                    self.activitiIndicator.stopAnimating()
+                    self.activitiIndicator.isHidden = true
+                    self.label.text = "You password \(self.password)"
+                    self.view.backgroundColor = .green
+                } else {
+                    self.label.text = "Password search in progress \(passwordBruteForce)"
+                    self.view.backgroundColor = .red
+                }
             }
         }
         print(passwordBruteForce)

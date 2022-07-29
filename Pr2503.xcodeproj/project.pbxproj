@@ -15,7 +15,7 @@
 		264DFEEA260D07F00035EA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264DFEE8260D07F00035EA15 /* LaunchScreen.storyboard */; };
 		FA16D2F82880564000BC5AD7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16D2F72880564000BC5AD7 /* String.swift */; };
 		FA16D2FA2880568400BC5AD7 /* BruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16D2F92880568400BC5AD7 /* BruteForce.swift */; };
-		FA941B742882952800BFA8B1 /* Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA941B732882952800BFA8B1 /* Func.swift */; };
+		FA941B742882952800BFA8B1 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA941B732882952800BFA8B1 /* Function.swift */; };
 		FACABCC1288DDFA7002934DA /* GeneratorRandomPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACABCC0288DDFA7002934DA /* GeneratorRandomPassword.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		264DFEEB260D07F00035EA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA16D2F72880564000BC5AD7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FA16D2F92880568400BC5AD7 /* BruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForce.swift; sourceTree = "<group>"; };
-		FA941B732882952800BFA8B1 /* Func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Func.swift; sourceTree = "<group>"; };
+		FA941B732882952800BFA8B1 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		FACABCC0288DDFA7002934DA /* GeneratorRandomPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorRandomPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +66,7 @@
 			children = (
 				FA941B712881D07700BFA8B1 /* App */,
 				FA941B722881D08500BFA8B1 /* ViewController */,
-				FA16D2F62880560F00BC5AD7 /* Ext */,
+				FA16D2F62880560F00BC5AD7 /* Extensions */,
 				264DFEE3260D07EF0035EA15 /* Main.storyboard */,
 				264DFEE6260D07F00035EA15 /* Assets.xcassets */,
 				264DFEE8260D07F00035EA15 /* LaunchScreen.storyboard */,
@@ -75,15 +75,15 @@
 			path = Pr2503;
 			sourceTree = "<group>";
 		};
-		FA16D2F62880560F00BC5AD7 /* Ext */ = {
+		FA16D2F62880560F00BC5AD7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				FA16D2F72880564000BC5AD7 /* String.swift */,
 				FA16D2F92880568400BC5AD7 /* BruteForce.swift */,
-				FA941B732882952800BFA8B1 /* Func.swift */,
+				FA941B732882952800BFA8B1 /* Function.swift */,
 				FACABCC0288DDFA7002934DA /* GeneratorRandomPassword.swift */,
 			);
-			path = Ext;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FA941B712881D07700BFA8B1 /* App */ = {
@@ -177,7 +177,7 @@
 				FA16D2FA2880568400BC5AD7 /* BruteForce.swift in Sources */,
 				FACABCC1288DDFA7002934DA /* GeneratorRandomPassword.swift in Sources */,
 				264DFEDE260D07EF0035EA15 /* AppDelegate.swift in Sources */,
-				FA941B742882952800BFA8B1 /* Func.swift in Sources */,
+				FA941B742882952800BFA8B1 /* Function.swift in Sources */,
 				264DFEE0260D07EF0035EA15 /* SceneDelegate.swift in Sources */,
 				FA16D2F82880564000BC5AD7 /* String.swift in Sources */,
 			);

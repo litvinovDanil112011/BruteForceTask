@@ -20,18 +20,20 @@ class ViewController: UIViewController {
     
     //MARK: Actions
     @IBAction func passwordStart(_ sender: Any) {
-        
-        password = passwordTextFild.text ?? ""
+        // метод которым решаем какой пароль будет либо пользывателя либо рондомный
+        if passwordTextFild.text == "" {
+            password = greteRandomPassword()
+            passwordTextFild.text = password
+        } else {
+            password = passwordTextFild.text ?? ""
+        }
+        // начало работы индикатора
+        activitiIndicator.isHidden = false
+        activitiIndicator.startAnimating()
         
         queue.async {
             self.bruteForce(passwordToUnlock: self.password)
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            if self.label.text == self.password {
-                self.activitiIndicator.stopAnimating()
-                self.label.text = "You password \(self.password)"
-            }
-        })
     }
 
 @IBAction func onBut(_ sender: Any) {
@@ -41,9 +43,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        greteRandomPassword()
+        
     }
     private func setupView(){
         passwordTextFild.isSecureTextEntry = true
+        activitiIndicator.isHidden = true
     }
 }
